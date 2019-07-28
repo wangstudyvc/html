@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.div0{
+			font-size: 0;//方法二：通过父元素的设置，消除换行符。再让子元素再重新设置字体大小。
+		}
+		.div1,.div2,.div3{
+			background-color: #cccccc;
+			border: 1px red solid;
+			display: inline;
+			font-size: 16px;
+		}
+		span{
+			background-color: #cccccc;
+			border: 1px blue solid;
+		}
+	</style>
+</head>
+<body>
+	<div class="div0">
+		<div class="div1">第一个块级元素div</div>
+		<div class="div2">第二个块级元素div</div>
+		<div class="div3">第三个块级元素div</div>
+	</div>
+	<hr>
+	<!-- 方法一：直接在内容上，不用换行来直接消除。 -->
+	<span>第一个行级元素span</span><span>第二个行级元素span</span><span>第三个行级元素span</span>
+</body>
+</html>

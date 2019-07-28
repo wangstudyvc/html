@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>display属性</title>
+    <style type="text/css">
+    div{
+        width: 200px;
+        height: 2em;
+        padding-left: 100px;
+        display: inline-block;
+    }
+    h2{
+        margin: 0;
+        display: inline;
+        font-size: 1.5em;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: "宋体";
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li{
+        display: none;
+    }
+    div:hover ul li{
+        display: inline;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2><a href="#">家电</a></h2>
+        <ul>
+            <li>冰箱</li>
+            <li>空调</li>
+            <li>洗衣机</li>
+        </ul>
+    </div>
+</body>
+
+</html>
