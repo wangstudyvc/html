@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>圣杯布局官方示例</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			min-width: 700px;
+		}
+		.header,.footer{
+			width: 100%;
+			height: 40px;
+			background-color: #ddd;
+			line-height: 40px;
+			text-align: center;
+			float: left;
+		}
+		.content{
+			padding: 0 220px 0 200px;
+		}
+		.left{
+			background-color: yellow;
+			min-height: 300px;
+			width: 200px;
+			float: left;
+			margin-left: -100%;
+			position: relative;
+			left: -200px;
+		}
+		.right{
+			background-color: blue;
+			min-height: 300px;
+			width: 220px;
+			float: left;
+			margin-left: -220px;
+			position: relative;
+			right: -220px;
+		}
+		.middle{
+			background-color: red;
+			min-height: 300px;
+			position: relative;
+			width: 100%;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h4>header</h4>
+	</div>
+	<div class="content">
+		<div class="middle">
+			<h4>middle</h4>
+			<p>这是页面的中间内容这是页面的中间内容这是页面的中间内容这是页面的中间内容这是页面的中间内容这是页面的中间内容这是页面的中间内容这是页面的中间内容</p>
+		</div>
+		<div class="left">
+			<h4>left</h4>
+			<p>这是页面的左侧内容</p>
+		</div>
+		<div class="right">
+			<h4>right</h4>
+			<p>这是页面的右侧内容</p>
+		</div>
+	</div>
+	<div class="footer">
+		<h4>footer</h4>
+	</div>
+</body>
+</html>

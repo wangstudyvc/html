@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .div0{
+            border: 1px black solid;
+            width: 700px;
+        }
+        .clearDiv{
+            height: 10px;
+            background-color: black;
+            clear: both;
+        }
+        .testDiv{
+            height: 10px;
+            background-color: gray;
+        }
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+            /*clear: both;*/
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            /*clear: both;*/
+        }
+        .div3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            float: left;
+            /*clear: both;*/
+        }
+        .div4{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+            /*clear: both;*/
+        }
+        .div5{
+            width: 250px;
+            height: 250px;
+            background-color: orange;
+            float: left;
+            /*clear: both;*/
+        }
+        
+        /* 清理浮动的最佳实践*/
+        .clearFloat::after {
+            content: "";
+            visibility:hidden;
+            height: 0px;
+            display: block;
+            clear: both;
+        }
+        /*针对IE浏览器的兼容性问题，解决IE浏览器不能清除浮动的bug修复*/
+        .clearFloat{
+            zoom:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="div0">
+        <div class="div1"></div>
+        <div class="testDiv"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="clearDiv"></div>
+    </div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+</body>
+</html>

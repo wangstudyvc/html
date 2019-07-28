@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .per{
+            width: 300px;
+            height: auto;
+            border:2px solid #aaa;
+        }
+        .li{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 5px;
+            float: left;
+        }
+        .clear::after{
+            content: "";
+            visibility: hidden;
+            height: 0px;
+            clear: both;
+            display: block;
+        }
+        .clear{
+            zoom:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="per clear">
+        <div class="li"></div>
+        <div class="li"></div>
+    </div>
+</body>
+</html>

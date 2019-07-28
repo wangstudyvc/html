@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小三角形示例</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 80%;
+			height: 600px;
+			border: 1px #eee solid;
+			margin: 10px auto;
+			position: relative;
+		}
+		.topTriangleArea{
+			position: absolute;
+			top: 25%;
+			left: 25%;
+			margin-left: -50px;
+			margin-top: -70px;
+		}
+		.topTriangleArea .topTriangle{
+			width: 0;
+			height: 0;
+			border-top: 10px transparent solid;
+			border-left: 10px transparent solid;
+			border-right: 10px transparent solid;
+			border-bottom: 10px orange solid;
+			margin: 0 auto;
+		}
+		.topTriangleArea .topTriangleContent{
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+
+		.rightTriangleArea{
+			position: absolute;
+			top: 25%;
+			left: 75%;
+			margin-left: -50px;
+			margin-top: -50px;
+		}
+		.rightTriangleArea .rightTriangleContent{
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			float: left;
+		}
+		.rightTriangleArea .rightTriangle{
+			width: 0;
+			height: 0;
+			border-top: 10px transparent solid;
+			border-left: 10px orange solid;
+			border-right: 10px transparent solid;
+			border-bottom: 10px transparent solid;
+			float: left;
+			position: relative;
+			top: 40px;
+		}
+
+		.bottomTriangleArea{
+			position: absolute;
+			top: 75%;
+			left: 25%;
+			margin-left: -50px;
+			margin-top: -50px;
+		}
+		.bottomTriangleArea .bottomTriangleContent{
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+		.bottomTriangleArea .bottomTriangle{
+			width: 0;
+			height: 0;
+			border-top: 10px orange solid;
+			border-left: 10px transparent solid;
+			border-right: 10px transparent solid;
+			border-bottom: 10px transparent solid;
+			margin: 0 auto;
+		}
+
+		.leftTriangleArea{
+			position: absolute;
+			top: 75%;
+			left: 75%;
+			margin-left: -50px;
+			margin-top: -50px;
+		}
+		.leftTriangleArea .leftTriangleContent{
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			float: left;
+		}
+		.leftTriangleArea .leftTriangle{
+			width: 0;
+			height: 0;
+			border-top: 10px transparent solid;
+			border-left: 10px transparent solid;
+			border-right: 10px orange solid;
+			border-bottom: 10px transparent solid;
+			float: left;
+			position: relative;
+			top: 40px;
+			right:120px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- 向上三角形 -->
+		<div class="topTriangleArea">
+			<div class="topTriangle"></div>
+			<div class="topTriangleContent"></div>
+		</div>
+		<!-- 向右三角形 -->
+		<div class="rightTriangleArea">
+			<div class="rightTriangleContent"></div>
+			<div class="rightTriangle"></div>
+		</div>
+		<!-- 向下三角形 -->
+		<div class="bottomTriangleArea">
+			<div class="bottomTriangleContent"></div>
+			<div class="bottomTriangle"></div>
+		</div>
+		<!-- 向左三角形 -->
+		<div class="leftTriangleArea">
+			<div class="leftTriangleContent"></div>
+			<div class="leftTriangle"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">	
+	<title>CSS布局</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.main{
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 50px;
+	}
+	.title{
+		font-size: 24px;
+		font-weight: bolder;
+		font-family: "宋体";
+		margin-left: 30%;
+		margin-bottom: 20px;
+	}
+	.content .item{
+		width: 45%;
+		float: left;
+		margin: 0 10px;
+	}
+	.content .item img{
+		width: 100%;
+	}
+	.content .item div{
+		font-weight: bold;
+		font-size: 14px;
+		word-spacing: 0.5em;
+		font-family: "宋体";
+	}
+	.content .clear{
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="title">ENJOY THE LIFE</div>
+		<div class="content">
+			<div class="item">
+				<img src="http://climg.mukewang.com/58f829090001a4b504260240.jpg">
+				<div>Life is like a book,just read more and more refined,more write more carefully,When read,mind open,all things have been indifferent to heart.Life is the precipitation.</div>
+			</div>
+			<div class="item">
+				<img src="http://climg.mukewang.com/58f8290f0001558804260240.jpg">
+				<div>Life is like a cup of tea,let people lead a person to endless aftertastes.You again good taste,it will always have a different taste,different people will have different taste more.</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>
