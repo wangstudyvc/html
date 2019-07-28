@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	clear: both;
+}
+header{
+	height: 60px;
+	width: 100%;
+	background-color: #1d9ad4;
+}
+header > img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+footer{
+	height: 60px;
+	width: 100%;
+	background-color: #1d9ad4;
+	text-align: center;
+	line-height: 60px;
+}
+section{
+	border: 1px #cbcbcb solid;
+}
+section > aside{
+	width: 12%;
+	font-size: 14px;
+	float: left;
+}
+section > aside > ul{
+	margin: 15px 0 45px 10px;
+	list-style-type: none;	
+}
+
+section > aside > ul > li{
+	margin: 15px 0;
+}
+
+section > aside > ul.order > li:first-child{
+	font-weight: bold;
+}
+
+section > article{
+	width: 88%;
+	float: right;
+	border: 1px #cbcbcb solid;
+	box-sizing: border-box;
+}
+
+section > article > h6 {
+	height: 50px;
+	border: 1px #cbcbcb solid;
+	text-align: left;
+	padding-left: 10px;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+section > article .search{
+	height: 50px;
+	line-height: 50px;
+	border: 1px #cbcbcb solid;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+section > article > table {
+	width: 100%;
+	background-color: #cbcbcb;
+}
+
+section > article > table > thead tr {
+	height: 50px;
+}
+
+section > article > table > thead th {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+section > article > table > tbody tr {
+	height: 54px;
+}
+
+section > article > table > tbody td{
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+}
+
+section > article > table > tbody img {
+	width: 40px;
+}
+
+section > article > table th,td{
+	background-color: #fff;
+}
