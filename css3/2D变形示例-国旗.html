@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>2-3</title>
+    <style type="text/css">
+    	/*国旗背景*/
+        .main{
+        	width: 300px;
+        	height: 200px;
+        	background-color: red;
+        	margin: 30px auto;
+        	position: relative;
+        }
+        /*五角星的通用设置*/
+        .star {
+        	width: 0;
+        	height: 0;
+        	border-top: 30px solid yellow;
+        	border-left: 40px solid transparent;
+        	border-right: 40px solid transparent;
+        	position: absolute;
+        }
+        .starContainer::before{
+        	content: "";
+        	width: 0;
+        	height: 0;
+        	border-top: 30px solid yellow;
+        	border-left: 40px solid transparent;
+        	border-right: 40px solid transparent;
+        	position: absolute;
+        	transform-origin: 50% 50%;
+        }
+        .starContainer::after{
+			content: "";
+        	width: 0;
+        	height: 0;
+        	border-top: 30px solid yellow;
+        	border-left: 40px solid transparent;
+        	border-right: 40px solid transparent;
+        	position: absolute;
+        	transform-origin: 50% 50%;
+        }
+        /*大五角星*/
+       	.star0Container::before{
+        	left: 25px;
+        	top: 40px;
+        	transform: rotate(288deg) scale(0.8);
+        }
+        .star0 {
+        	left: 25px;
+        	top: 40px;
+        	transform: scale(0.8);
+        }
+       .star0Container::after{
+        	left: 25px;
+        	top: 40px;
+        	transform: rotate(67deg) scale(0.8);
+        }
+        /*小五角星1*/
+       	.star1Container::before{
+        	left: 85px;
+        	top: 5px;
+        	transform: rotate(318deg) scale(0.2);
+        }
+        .star1 {
+        	left: 85px;
+        	top: 5px;
+        	transform: rotate(30deg) scale(0.2);
+        }
+       .star1Container::after{
+        	left: 85px;
+        	top: 5px;
+        	transform: rotate(97deg) scale(0.2);
+        }
+        /*小五角星2*/
+       	.star2Container::before{
+        	left: 105px;
+        	top: 30px;
+        	transform: rotate(343deg) scale(0.2);
+        }
+        .star2 {
+        	left: 105px;
+        	top: 30px;
+        	transform: rotate(55deg) scale(0.2);
+        }
+       .star2Container::after{
+        	left: 105px;
+        	top: 30px;
+        	transform: rotate(122deg) scale(0.2);
+        }
+        /*小五角星3*/
+       	.star3Container::before{
+        	left: 105px;
+        	top: 60px;
+        	transform: rotate(303deg) scale(0.2);
+        }
+        .star3 {
+        	left: 105px;
+        	top: 60px;
+        	transform: rotate(15deg) scale(0.2);
+        }
+       .star3Container::after{
+        	left: 105px;
+        	top: 60px;
+        	transform: rotate(82deg) scale(0.2);
+        }
+        /*小五角星4*/
+       	.star4Container::before{
+        	left: 85px;
+        	top: 85px;
+        	transform: rotate(318deg) scale(0.2);
+        }
+        .star4 {
+        	left: 85px;
+        	top: 85px;
+        	transform: rotate(30deg) scale(0.2);
+        }
+       .star4Container::after{
+        	left: 85px;
+        	top: 85px;
+        	transform: rotate(97deg) scale(0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    	<div class="star0Container starContainer">
+    		<div class="star0 star"></div>
+    	</div>
+    	<div class="star1Container starContainer">
+    		<div class="star1 star"></div>
+    	</div>
+    	<div class="star2Container starContainer">
+    		<div class="star2 star"></div>
+    	</div>
+    	<div class="star3Container starContainer">
+    		<div class="star3 star"></div>
+    	</div>
+    	<div class="star4Container starContainer">
+    		<div class="star4 star"></div>
+    	</div>
+    </div>
+</body>
+</html>

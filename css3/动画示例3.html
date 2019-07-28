@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-5</title>
+    <style type="text/css">
+        .div0 {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            box-sizing: border-box;
+            border: 1px solid red;
+            border-bottom: 200px solid red;
+            border-radius: 50%;
+            transform-origin: 50% 50%;
+            
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        .div0::before{
+            content: "";
+            width: 49px;
+            height: 49px;
+            border: 75px solid red;
+            margin: 0;
+            position: absolute;
+            left: 0;
+            top: 99.5px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .div0::after{
+            content: "";
+            width: 49px;
+            height: 49px;
+            border: 75px solid white;
+            margin: 0;
+            position: absolute;
+            border-radius: 50%;
+            left: 199px;
+            top: 99.5px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="div0"></div>
+</body>
+</html>

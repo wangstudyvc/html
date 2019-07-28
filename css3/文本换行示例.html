@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>text-overflow</title>
+	<style type="text/css">
+		p { width: 500px;font-size:20px; margin: 10px auto; background: #abcdef;overflow: hidden;}
+		.p1{
+			text-overflow: ellipsis;
+		}
+		.p2{
+			text-overflow: clip;
+		}
+		.p1:hover,.p2:hover{
+			overflow:visible;
+		}
+	</style>
+</head>
+<body>
+	<p class="p1">bababadalgharaghtakamminarronnkonnbronntonne,rronntuonnthunn,trovarrhounawnskawntoohoohoordenenthurnuk</p>
+	<p class="p2">bababadalgharaghtakamminarronnkonnbronntonne,rronntuonnthunn,trovarrhounawnskawntoohoohoordenenthurnuk</p>
+</body>
+</html>

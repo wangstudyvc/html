@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>多个动画作用示例</title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			/*多个动画调用之间用逗号分隔*/
+			animation-name: move,change;
+			/*设置动画持续的时间*/
+			animation-duration: 5s;
+			/*设置动画的过渡类型*/
+			animation-timing-function: linear;
+			/*动画结束时停在动画结束时的动画上*/
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes move{
+			from {margin-left: 10px;}
+			to {margin-left: 200px;}
+		}
+		@keyframes change{
+			from{background-color: red;}
+			to{background-color: blue;}
+		}
+	</style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

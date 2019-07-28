@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>线性渐变</title>
+    <style type="text/css">
+    .div0{
+    	float: left;
+    	margin: 20px;
+    }
+    h1{
+    	font-size: 20px;
+    	font-weight: normal;
+    	text-align: center;
+    }
+    .container{
+    	width: 300px;
+    	height: 300px;
+    }
+    .toBottom{
+    	background:-webkit-linear-gradient(yellow,red);
+    	background:   -moz-linear-gradient(yellow,red);
+    	background:     -o-linear-gradient(yellow,red);
+    	background:        linear-gradient(yellow,red);
+    }
+    .toRight{
+    	background:-webkit-linear-gradient(left,yellow,red);
+    	background:   -moz-linear-gradient(right,yellow,red);
+    	background:     -o-linear-gradient(right,yellow,red);
+    	background:        linear-gradient(to right,yellow,red);
+    }
+    .toAnother{
+    	background:-webkit-linear-gradient(left top,yellow,red);
+    	background:   -moz-linear-gradient(right bottom,yellow,red);
+    	background:     -o-linear-gradient(right bottom,yellow,red);
+    	background:        linear-gradient(to right bottom,yellow,red);
+    }
+    </style>
+</head>
+<body>
+	<div class="div0">
+		<h1>上下方向渐变</h1>
+		<div class="container toBottom"></div>
+	</div>
+	<div class="div0">
+		<h1>左右方向渐变</h1>
+		<div class="container toRight"></div>
+	</div>
+	<div class="div0">
+		<h1>对角方向渐变</h1>
+		<div class="container toAnother"></div>
+	</div>
+</body>
+</html>
